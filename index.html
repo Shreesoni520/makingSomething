@@ -7,6 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            Maki
+        </div>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+        <select id="pageSelect" onchange="goToPage(this)">
+            <option><i class="fa-solid fa-user-plus"></i>(._.)</option>
+            <option value="email/signUp.html">Sign up</option>
+            <option value="email/logIn.html">Log in</option>
+        </select>
+
+        <script>
+            function goToPage(select) {
+            var url = select.value;
+            if (url) {
+                window.location.href = url;
+            }
+            }
+        </script>
+
+    </header>
+
 </body>
 </html>
+ 
