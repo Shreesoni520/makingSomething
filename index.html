@@ -1,41 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Me_Making_Something</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Me_Making_Something</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="logo">
-            Maki
-        </div>
-        <nav>
-            <ul class="nav_links">
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
+  <header>
+    <div class="logo">Maki</div>
 
-        <select id="pageSelect" onchange="goToPage(this)">
-            <option><i class="fa-solid fa-user-plus"></i>(._.)</option>
-            <option value="email/signUp.html">Sign up</option>
-            <option value="email/logIn.html">Log in</option>
-        </select>
+    <nav>
+      <ul class="nav_links">
+        <li><a href="https://moodle.enosi.pt/my/courses.php" target="_blank">ufcdAao</a></li>
+        <li><a href="https://moodle.nossasemente.pt/my/" target="_blank">ufcdMario</a></li>
+        <li><a href="#">About</a></li>
+        <li><a class="link" href="/signIn.html">Sign In</a></li>
+      </ul>
+    </nav>
 
-        <script>
-            function goToPage(select) {
-            var url = select.value;
-            if (url) {
-                window.location.href = url;
-            }
-            }
-        </script>
-
-    </header>
+    <div class="buttons">
+      <a href="signUp.html">
+        <button class="button">Sign Up</button>
+      </a>
+    </div>
+  </header>
 
 </body>
 </html>
- 
